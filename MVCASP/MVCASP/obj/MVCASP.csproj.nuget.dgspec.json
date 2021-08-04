@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eladio\\source\\repos\\MVCASP\\MVCASP\\MVCASP.csproj": {}
+    "C:\\Users\\Eladio\\Documents\\GitHub\\ASP-MVC\\MVCASP\\MVCASP\\MVCASP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eladio\\source\\repos\\MVCASP\\MVCASP\\MVCASP.csproj": {
+    "C:\\Users\\Eladio\\Documents\\GitHub\\ASP-MVC\\MVCASP\\MVCASP\\MVCASP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eladio\\source\\repos\\MVCASP\\MVCASP\\MVCASP.csproj",
+        "projectUniqueName": "C:\\Users\\Eladio\\Documents\\GitHub\\ASP-MVC\\MVCASP\\MVCASP\\MVCASP.csproj",
         "projectName": "MVCASP",
-        "projectPath": "C:\\Users\\Eladio\\source\\repos\\MVCASP\\MVCASP\\MVCASP.csproj",
+        "projectPath": "C:\\Users\\Eladio\\Documents\\GitHub\\ASP-MVC\\MVCASP\\MVCASP\\MVCASP.csproj",
         "packagesPath": "C:\\Users\\Eladio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eladio\\source\\repos\\MVCASP\\MVCASP\\obj\\",
+        "outputPath": "C:\\Users\\Eladio\\Documents\\GitHub\\ASP-MVC\\MVCASP\\MVCASP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Eladio\\AppData\\Roaming\\NuGet\\NuGet.Config",
