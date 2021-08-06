@@ -1,0 +1,30 @@
+﻿@model MVCASP.Models.Person
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<section class="container">
+    <div class="row mt-5 mb-3">
+        <h1 class="text-center">Agregar elementos</h1>
+    </div>
+
+    <form asp-action="Create" method="post">
+        <section class="row">
+            <div class="col-6">
+                <label>First Name</label>
+                <input asp-for="fName" type="text" maxlength=30 class="form-control" />
+            </div>
+
+            <div class="col-6">
+                <label>Last Name</label>
+                <input asp-for="lName" type="text" maxlength=30 class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary m-3 p-2" value="create">Agregar</button>
+
+            <button asp-action="Index" class="btn btn-outline-danger m-3 p-2">Volver</button>
+        </section>
+    </form>
+
+</section>

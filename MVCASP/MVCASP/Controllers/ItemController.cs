@@ -19,10 +19,38 @@ namespace MVCASP.Controllers
             _db = db;
         }
 
+        // Action default
         public IActionResult Index()
         {
             IEnumerable<Person> objList = _db.People;
             return View(objList);
         }
+
+
+        // Action para el url de create
+        // GET - Create
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST - Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Person obj)
+        {
+
+            // Using EF to add the item
+            //System.Diagnostics.Debug.WriteLine(obj.fName);
+            _db.People.Add(obj);
+            _db.SaveChanges();
+
+
+            //return View();
+            return RedirectToAction("Index");
+        }
+
+
     }
 }

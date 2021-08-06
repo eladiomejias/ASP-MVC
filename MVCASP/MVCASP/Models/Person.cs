@@ -10,7 +10,9 @@ namespace MVCASP.Models
         // Our first data model
         [Key]
         public int Id { get; set; }
+
         public string fName { get; set; }
+
         public string lName { get; set; }
     }
 }
