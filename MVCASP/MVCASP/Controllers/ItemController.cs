@@ -51,6 +51,53 @@ namespace MVCASP.Controllers
             return RedirectToAction("Index");
         }
 
+        // Delete - POST Delete - int? means optional id
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeletePost(int? id)
+        {
+
+            var obj = _db.People.Find(id);
+
+            if(obj == null)
+            {
+                return NotFound();
+            }
+            
+            _db.People.Remove(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
+
+        // Delete - GET
+        [HttpGet]
+        public IActionResult Delete(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+
+            var obj = _db.People.Find(id);
+
+            if(obj == null)
+            {
+               return NotFound();
+
+            }
+
+            return View(obj);
+            
+
+        }
+
+        // Delete
+        /* public IActionResult Update(Person id)
+         {
+
+         }*/
+
 
     }
 }

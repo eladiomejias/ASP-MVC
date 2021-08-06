@@ -200,3 +200,4 @@ C:\Users\Eladio\Documents\GitHub\ASP-MVC\MVCASP\MVCASP\bin\Debug\netcoreapp3.1\z
 C:\Users\Eladio\Documents\GitHub\ASP-MVC\MVCASP\MVCASP\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Eladio\Documents\GitHub\ASP-MVC\MVCASP\MVCASP\obj\Debug\netcoreapp3.1\Razor\Views\Item\Index.cshtml.g.cs
 C:\Users\Eladio\Documents\GitHub\ASP-MVC\MVCASP\MVCASP\obj\Debug\netcoreapp3.1\Razor\Views\Item\Create.cshtml.g.cs
+C:\Users\Eladio\Documents\GitHub\ASP-MVC\MVCASP\MVCASP\obj\Debug\netcoreapp3.1\Razor\Views\Item\Delete.cshtml.g.cs

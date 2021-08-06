@@ -12,6 +12,8 @@
                 <th scope="col">#</th>
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
+                <th scope="col">Update</th>
+                <th scope="col">Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -22,11 +24,14 @@
                     #person.fName
                 </h3>-->
 
-                <tr>
-                    <th scope="row">@person.Id</th>
-                    <td>@person.fName</td>
-                    <td>@person.lName</td>
-                </tr>
+            <tr>
+                <th scope="row">@person.Id</th>
+                <td>@person.fName</td>
+                <td>@person.lName</td>
+                <td><a asp-action="Update" asp-route-Id="@person.Id" class="btn btn-primary">Actualizar</a></td>
+                <td><a asp-action="Delete" asp-route-Id="@person.Id" class="btn btn-danger">Eliminar</a></td>
+
+            </tr>
 
             }
 
