@@ -92,11 +92,43 @@ namespace MVCASP.Controllers
 
         }
 
-        // Delete
-        /* public IActionResult Update(Person id)
+        // Update - GET
+         public IActionResult Update(int? id)
          {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
 
-         }*/
+            var obj = _db.People.Find(id);
+
+            if(obj == null)
+            {
+               return NotFound();
+
+            }
+
+            return View(obj);
+            
+         }
+
+
+        // POST - Update - El nombre no es marcado por error ya que uno usa entero en entrada
+        // y el otro usa un objeto
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Update(Person obj)
+        {
+
+            // Using EF to add the item
+            //System.Diagnostics.Debug.WriteLine(obj.fName);
+            _db.People.Update(obj);
+            _db.SaveChanges();
+
+
+            //return View();
+            return RedirectToAction("Index");
+        }
 
 
     }

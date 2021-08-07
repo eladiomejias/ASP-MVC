@@ -1,0 +1,28 @@
+﻿@model MVCASP.Models.Person
+
+<section class="container">
+    <div class="row mt-5 mb-3">
+        <h1 class="text-center">Update elements</h1>
+    </div>
+
+    <form method="post" asp-action="Update">
+        <section class="row">
+            <input asp-for="Id" hidden />
+            <div class="col-6">
+                <label>First Name</label>
+                <input asp-for="fName" type="text" maxlength=30 class="form-control" />
+            </div>
+
+            <div class="col-6">
+                <label>Last Name</label>
+                <input asp-for="lName" type="text" maxlength=30 class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-info m-3 p-2" value="Update">Update</button>
+
+            <button asp-action="Index" class="btn btn-success m-3 p-2">Volver</button>
+
+        </section>
+    </form>
+
+</section>
