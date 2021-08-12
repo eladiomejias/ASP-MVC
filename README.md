@@ -15,6 +15,7 @@ La clase Startup maneja los elementos a iniciar con la aplicación como assets, 
 - Se crea el contexto de Base de Datos
 - Se crea el objeto y se utiliza como objeto interno de base de datos con elementos de IEnumerable para iterar el objeto de DB
 - Para crear nuevos modelos de base de datos o nuevos cambios primero se realiza una *migracion* con el SHELL del Package Manager y se usando los comandos *add-migration agregandoElemento* y se actualiza *update-database* para realizar y subir la migracion a la base de datos, cualidad del Entity Frameworks, Code - First.
+- Si la migracion no funciona, probar *enable-migrations* antes de realizar cualquier de unas opciones de agregar migraciones.
 
 ### Para correr aplicación
 
