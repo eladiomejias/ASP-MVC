@@ -71,6 +71,12 @@ namespace MVCASP
                     pattern: "info",
                     defaults: new { controller = "Info", action =  "infoAction" });
 
+                /*endpoints.MapControllerRoute(
+                    name: "Search",
+                    pattern: "Search/{id?}",
+                    defaults: new { controller = "Search", action = "Index" });
+                */
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

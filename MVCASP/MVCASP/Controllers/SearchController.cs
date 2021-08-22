@@ -24,10 +24,31 @@ namespace MVCASP.Controllers
             return View();
         }
 
+        // Get
+        [HttpGet]
+        public IActionResult User(int id)
+        {
+            if (id <= 0)
+            {
+                return NotFound();
+            }
+
+            Person obj = _db.People.FirstOrDefault(p => p.Id == id);
+
+            if (obj == null)
+            {
+                return NotFound();
+            }
+
+            return View(obj);
+
+        }
+
         // POST - Buscar
         // SE DEBE PASAR EL ELEMENTO CREADO CON EL OBJETO DEL MODELO - asp-for para recibir la informacion
         [HttpPost]
-        public IActionResult searchUser(int? id)
+        [Route("Search/User/{id?}")]
+        public IActionResult User(int? id)
         {
             // Obtener el ID y pasar el valor guardandolo com objeto
             Person obj = _db.People.FirstOrDefault(p => p.Id == id);
@@ -37,13 +58,7 @@ namespace MVCASP.Controllers
            // return Content(obj.fName);
         }
 
-        /*
-        [HttpGet]
-        public IActionResult searchUser(string data)
-        {
-            ViewBag.Data = data;
-            return Content("Good " + data);
-        }
-        */
+    
+        
     }
 }

@@ -19,26 +19,28 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-
-            <form method="post" asp-action="searchUser">
-                <div class="modal-body">
-                    Para buscar el elemento segun el ID reference, ingresalo en la parte de abajo.
-                </div>
-
-                <div class="input-group mb-3 pr-3 pl-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">#</span>
+            @*@using (Html.BeginForm("User", "Search", FormMethod.Post))
+            {*@
+                <form method="post" asp-action="User">
+                    <div class="modal-body">
+                        Para buscar el elemento segun el ID reference, ingresalo en la parte de abajo.
                     </div>
-                    <input asp-for="Id" type="number" required class="form-control" placeholder="Identificador" aria-label="Identificador" aria-describedby="basic-addon1">
-                </div>
 
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button class="btn btn-primary" type="submit">Buscar</button>
-                </div>
-            </form>
+                    <div class="input-group mb-3 pr-3 pl-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">#</span>
+                        </div>
+                        <input asp-for="Id" type="number" required class="form-control" placeholder="Identificador" aria-label="Identificador" aria-describedby="basic-addon1">
+                    </div>
 
-        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button class="btn btn-primary" type="submit">Buscar</button>
+                    </div>
+                    
+                </form>
+            @*}*@
+            </div>
     </div>
 </div>
 
@@ -61,4 +63,3 @@
 
     </tbody>
 </table>
-
