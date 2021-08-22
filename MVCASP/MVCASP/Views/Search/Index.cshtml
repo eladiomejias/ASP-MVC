@@ -1,0 +1,64 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model MVCASP.Models.Person
+@{
+    ViewData["Title"] = "Busqueda";
+}
+
+
+<a href="#" type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModal">Buscar elemento</a>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Busqueda de persona</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <form method="post" asp-action="searchUser">
+                <div class="modal-body">
+                    Para buscar el elemento segun el ID reference, ingresalo en la parte de abajo.
+                </div>
+
+                <div class="input-group mb-3 pr-3 pl-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">#</span>
+                    </div>
+                    <input asp-for="Id" type="number" required class="form-control" placeholder="Identificador" aria-label="Identificador" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <!--            <tr>
+            <th scope="row">ID</th>
+            <td>Nombre/td>
+            <td>Apellido</td>
+        </tr>
+        -->
+
+    </tbody>
+</table>
+

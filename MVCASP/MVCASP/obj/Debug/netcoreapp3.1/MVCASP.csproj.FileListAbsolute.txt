@@ -202,3 +202,5 @@ C:\Users\Eladio\Documents\GitHub\ASP-MVC\MVCASP\MVCASP\obj\Debug\netcoreapp3.1\R
 C:\Users\Eladio\Documents\GitHub\ASP-MVC\MVCASP\MVCASP\obj\Debug\netcoreapp3.1\Razor\Views\Item\Create.cshtml.g.cs
 C:\Users\Eladio\Documents\GitHub\ASP-MVC\MVCASP\MVCASP\obj\Debug\netcoreapp3.1\Razor\Views\Item\Delete.cshtml.g.cs
 C:\Users\Eladio\Documents\GitHub\ASP-MVC\MVCASP\MVCASP\obj\Debug\netcoreapp3.1\Razor\Views\Item\Update.cshtml.g.cs
+C:\Users\Eladio\Documents\GitHub\ASP-MVC\MVCASP\MVCASP\obj\Debug\netcoreapp3.1\Razor\Views\Search\Index.cshtml.g.cs
+C:\Users\Eladio\Documents\GitHub\ASP-MVC\MVCASP\MVCASP\obj\Debug\netcoreapp3.1\Razor\Views\Search\searchUser.cshtml.g.cs

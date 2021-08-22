@@ -60,11 +60,12 @@ namespace MVCASP
 
                 // Este endpoint es custom si se menciona sin los defaults ira directamente al Index()
                 // Routing convencional
-
                 endpoints.MapControllerRoute(
                     name: "about",
                     pattern: "about");
 
+                // Routing en el startup evitando la carga por defecto de la propiedad Index a
+                // la carga de la funcion infoAction
                 endpoints.MapControllerRoute(
                     name: "info",
                     pattern: "info",

@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@* Para poder actualizar la data *@
+@* En este caso no es IEnumerable porque no se ITERA al ser un solo dato *@
+@model MVCASP.Models.Person
+
+@{
+    ViewData["Title"]="Busqueda Usuario ";
+}
+
+    <table class="table mt-5">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <th scope="row">@Model.Id</th>
+                    <td>@Model.fName</td>
+                    <td>@Model.lName</td>
+                </tr>
+        </tbody>
+    </table>
+

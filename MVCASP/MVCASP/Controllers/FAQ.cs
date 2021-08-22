@@ -10,7 +10,7 @@ namespace MVCASP.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return Content("En este caso no se ingresa aca si no en la ruta convencional de abajo");
         }
 
         // This is conventional routing

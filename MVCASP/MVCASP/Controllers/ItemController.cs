@@ -42,12 +42,11 @@ namespace MVCASP.Controllers
         {
 
             // Using EF to add the item
-            //System.Diagnostics.Debug.WriteLine(obj.fName);
+            // System.Diagnostics.Debug.WriteLine(obj.fName);
             _db.People.Add(obj);
             _db.SaveChanges();
 
-
-            //return View();
+            // return View();
             return RedirectToAction("Index");
         }
 
